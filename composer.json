@@ -1,0 +1,19 @@
+{
+    "name": "anast/php.loc",
+    "description": "my first project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anastasia",
+            "email": "martletanastasia@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

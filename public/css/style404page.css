@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet");
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+
+.container-404{
+    width:100vw;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    left:6vmin;
+    text-align: center;
+}
+
+.cog-wheel1-404, .cog-wheel2-404{
+    transform:scale(0.35);
+}
+
+.cog1-404, .cog2-404{
+    width:40vmin;
+    height:40vmin;
+    border-radius:50%;
+    border:6vmin solid #D10024;
+    position: relative;
+}
+
+
+.cog2-404{
+    border:6vmin solid #B9BABC;
+}
+
+.top-404, .down-404, .left-404, .right-404, .left-top-404, .left-down-404, .right-top-404, .right-down-404{
+    width:10vmin;
+    height:10vmin;
+    background-color: #D10024;
+    position: absolute;
+}
+
+.cog2-404 .top-404,.cog2-404  .down-404,.cog2-404  .left-404,.cog2-404  .right-404,
+.cog2-404  .left-top-404,.cog2-404  .left-down-404,.cog2-404  .right-top-404,.cog2-404  .right-down-404{
+    background-color: #B9BABC;
+}
+
+.top-404{
+    top:-14vmin;
+    left:9vmin;
+}
+
+.down-404{
+    bottom:-14vmin;
+    left:9vmin;
+}
+
+.left-404{
+    left:-14vmin;
+    top:9vmin;
+}
+
+.right-404{
+    right:-14vmin;
+    top:9vmin;
+}
+
+.left-top-404{
+    transform:rotateZ(-45deg);
+    left:-8vmin;
+    top:-8vmin;
+}
+
+.left-down-404{
+    transform:rotateZ(45deg);
+    left:-8vmin;
+    top:25vmin;
+}
+
+.right-top-404{
+    transform:rotateZ(45deg);
+    right:-8vmin;
+    top:-8vmin;
+}
+
+.right-down-404{
+    transform:rotateZ(-45deg);
+    right:-8vmin;
+    top:25vmin;
+}
+
+.cog2-404{
+    position: relative;
+    left:-40.2vmin;
+    bottom:10vmin;
+}
+
+.cog1-404{
+    left:30.2vmin;
+}
+
+h1-404{
+    color:#142833;
+}
+
+.first-four-404{
+    position: relative;
+    left:23vmin;
+    font-size:20vmin;
+}
+
+.second-four-404{
+    position: relative;
+    right:28vmin;
+    z-index: -1;
+    font-size:20vmin;
+}
+
+.wrong-para-404{
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    bottom:.3vmin;
+    padding:3vmin 12vmin 3vmin 3vmin;
+    font-weight:600;
+    color:#092532;
+}
