@@ -36,6 +36,18 @@
 
     </head>
 	<body>
+
+    <?php
+
+    /**
+     * @var \App\Models\Product $product
+     * @var array $productList
+     */
+    print_r($product);
+    print_r($product->name);
+    print_r($productList);
+    ?>
+
 		<!-- HEADER -->
 		<header>
 			<!-- TOP HEADER -->
@@ -162,31 +174,11 @@
 		</header>
 		<!-- /HEADER -->
 
-		<!-- NAVIGATION -->
-		<nav id="navigation">
-			<!-- container -->
-			<div class="container">
-				<!-- responsive-nav -->
-				<div id="responsive-nav">
-					<!-- NAV -->
-					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Hot Deals</a></li>
-						<li><a href="#">Categories</a></li>
-						<li><a href="#">Laptops</a></li>
-						<li><a href="#">Smartphones</a></li>
-						<li><a href="#">Cameras</a></li>
-						<li><a href="#">Accessories</a></li>
-					</ul>
-					<!-- /NAV -->
-				</div>
-				<!-- /responsive-nav -->
-			</div>
-			<!-- /container -->
-		</nav>
-		<!-- /NAVIGATION -->
+        <!-- NAVIGATION -->
+        <?php include 'partials/menu.php'; ?>
+        <!-- /NAVIGATION -->
 
-		<!-- BREADCRUMB -->
+        <!-- BREADCRUMB -->
 		<div id="breadcrumb" class="section">
 			<!-- container -->
 			<div class="container">
