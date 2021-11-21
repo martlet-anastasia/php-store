@@ -6,5 +6,5 @@ Code is designed using **MVC** pattern.
 To get all dependencies and be able to reproduce the store, clone this repo and run the next command to get all requirements:
 
 ```
-composer init
+composer install
 ```
