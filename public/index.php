@@ -2,6 +2,9 @@
     include '../vendor/autoload.php';
     include '../app/core.php';
 
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
    $routes = [
        '/' => 'App\\Controllers\\SiteController@index',
        '/catalog' => 'App\\Controllers\\CatalogController@index',
