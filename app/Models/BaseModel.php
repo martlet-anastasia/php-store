@@ -8,6 +8,7 @@
     {
         protected static $tableName;
         protected static $connection;
+        protected static $fillable = [];
 
         protected static function getConnection(): mysqli
         {
@@ -63,5 +64,35 @@
 
             return $result->fetch_object(static::class);
         }
+
+
+        public function save() {
+            $connection = self::getConnection();
+            $tableName = static::getTableName();
+
+            if(isset($this->id) && !empty($this->$id)) {
+                // update query
+            } else {
+                $fields = implode(' , ', static::$fillable);
+                $values = [];
+
+                foreach(static::$fillable as $attributeName) {
+                    $values[] = $this->{$attributeName} ?? null;
+                }
+                $values = "'" . implode("' , '", $values) . "'";
+                $sql = "insert into {$tableName} ({$fields}) values ({$values})";
+                print_r($sql);
+                $connection->query($sql);
+
+                if($connection->insert_id) {
+                    $this->id = $connection->insert_id;
+                }
+            }
+
+
+        }
+
+
+
 
     }

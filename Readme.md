@@ -7,4 +7,8 @@ To get all dependencies and be able to reproduce the store, clone this repo and 
 
 ```
 composer install
+<<<<<<< Updated upstream
 ```
+=======
+```
+>>>>>>> Stashed changes

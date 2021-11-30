@@ -9,6 +9,12 @@
     {
         public function index()
         {
+            $product = new Product();
+            $product->name = 'new prodicut';
+            $product->description = 'kjdsdjsdkjs';
+            $product->save();
+
+            die();
             render('main.php');
         }
 
